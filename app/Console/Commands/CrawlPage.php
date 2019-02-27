@@ -39,8 +39,8 @@ class CrawlPage extends Command
      */
     public function handle()
     {
-        // $newYork = file_get_contents('http://www.stockq.org/commodity/FUTRWOIL.php');
-        $newYork = file_get_contents(base_path('index.html'));
+        $newYork = file_get_contents('http://www.stockq.org/commodity/FUTRWOIL.php');
+        // $newYork = file_get_contents(base_path('index.html'));
 
         $crawler = new Crawler($newYork);
 
